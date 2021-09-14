@@ -1,0 +1,11 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "edge-workshop"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-1seco1yh3nsm1"
+s3_prefix = "edge-workshop"
+region = "us-west-1"
+profile = "edge-workshop"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"

@@ -1,62 +1,48 @@
 {
-  "body": "{\"message\": \"hello world\"}",
-  "resource": "/{proxy+}",
-  "path": "/path/to/resource",
-  "httpMethod": "POST",
-  "isBase64Encoded": false,
-  "queryStringParameters": {
-    "foo": "bar"
-  },
-  "pathParameters": {
-    "proxy": "/path/to/resource"
-  },
-  "stageVariables": {
-    "baz": "qux"
-  },
-  "headers": {
-    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
-    "Accept-Encoding": "gzip, deflate, sdch",
-    "Accept-Language": "en-US,en;q=0.8",
-    "Cache-Control": "max-age=0",
-    "CloudFront-Forwarded-Proto": "https",
-    "CloudFront-Is-Desktop-Viewer": "true",
-    "CloudFront-Is-Mobile-Viewer": "false",
-    "CloudFront-Is-SmartTV-Viewer": "false",
-    "CloudFront-Is-Tablet-Viewer": "false",
-    "CloudFront-Viewer-Country": "US",
-    "Host": "1234567890.execute-api.us-east-1.amazonaws.com",
-    "Upgrade-Insecure-Requests": "1",
-    "User-Agent": "Custom User Agent String",
-    "Via": "1.1 08f323deadbeefa7af34d5feb414ce27.cloudfront.net (CloudFront)",
-    "X-Amz-Cf-Id": "cDehVQoZnx43VYQb9j2-nvCh-9z396Uhbp027Y2JvkCPNLmGJHqlaA==",
-    "X-Forwarded-For": "127.0.0.1, 127.0.0.2",
-    "X-Forwarded-Port": "443",
-    "X-Forwarded-Proto": "https"
-  },
-  "requestContext": {
-    "accountId": "123456789012",
-    "resourceId": "123456",
-    "stage": "prod",
-    "requestId": "c6af9ac6-7b61-11e6-9a41-93e8deadbeef",
-    "requestTime": "09/Apr/2015:12:34:56 +0000",
-    "requestTimeEpoch": 1428582896000,
-    "identity": {
-      "cognitoIdentityPoolId": null,
-      "accountId": null,
-      "cognitoIdentityId": null,
-      "caller": null,
-      "accessKey": null,
-      "sourceIp": "127.0.0.1",
-      "cognitoAuthenticationType": null,
-      "cognitoAuthenticationProvider": null,
-      "userArn": null,
-      "userAgent": "Custom User Agent String",
-      "user": null
+    "version": "2.0",
+    "routeKey": "GET /agent_check",
+    "rawPath": "/agent_check",
+    "rawQueryString": "test_this=false",
+    "headers": {
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+        "accept-encoding": "gzip, deflate, br",
+        "accept-language": "en-US,en;q=0.9,he;q=0.8",
+        "content-length": "0",
+        "host": "s4e1eedvr8.execute-api.us-west-1.amazonaws.com",
+        "sec-ch-ua": "\"Google Chrome\";v=\"93\", \" Not;A Brand\";v=\"99\", \"Chromium\";v=\"93\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"macOS\"",
+        "sec-fetch-dest": "document",
+        "sec-fetch-mode": "navigate",
+        "sec-fetch-site": "none",
+        "sec-fetch-user": "?1",
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+        "x-amzn-trace-id": "Root=1-6140bb0e-19f3946b15269ae144dfbbc1",
+        "x-forwarded-for": "111.246.162.47",
+        "x-forwarded-port": "443",
+        "x-forwarded-proto": "https"
     },
-    "path": "/prod/path/to/resource",
-    "resourcePath": "/{proxy+}",
-    "httpMethod": "POST",
-    "apiId": "1234567890",
-    "protocol": "HTTP/1.1"
-  }
+    "queryStringParameters": {
+        "test_this": "false"
+    },
+    "requestContext": {
+        "accountId": "555542255826",
+        "apiId": "s4e1eedvr8",
+        "domainName": "s4e1eedvr8.execute-api.us-west-1.amazonaws.com",
+        "domainPrefix": "s4e1eedvr8",
+        "http": {
+            "method": "GET",
+            "path": "/agent_check",
+            "protocol": "HTTP/1.1",
+            "sourceIp": "111.246.162.47",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"
+        },
+        "requestId": "FqIqQgBOSK4EM6w=",
+        "routeKey": "GET /agent_check",
+        "stage": "$default",
+        "time": "14/Sep/2021:15:09:02 +0000",
+        "timeEpoch": 1631632142211
+    },
+    "isBase64Encoded": false
 }
